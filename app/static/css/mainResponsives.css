@@ -1,0 +1,19 @@
+/* responsive */
+@media (max-width: 768px) {
+  .oem-waves {
+    height: 40px;
+    min-height: 40px;
+  }
+}
+@media (max-width: 999px) {
+  .oem-animation-container-inner-text {
+    padding: 80px 20px 100px 20px;
+    width: 100%;
+  }
+  .oem-animation-container-inner-text {
+    width: 100%;
+  }
+  .oem-animation-container-inner-image {
+    display: none;
+  }
+}

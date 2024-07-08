@@ -1,0 +1,127 @@
+<svg
+      id="e2PXD4oTc671"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 300 300"
+      shape-rendering="geometricPrecision"
+      text-rendering="geometricPrecision"
+    >
+    <style><![CDATA[
+    #e2PXD4oTc672_to {
+        animation: e2PXD4oTc672_to__to 3000ms linear infinite forwards;
+    }
+    #e2PXD4oTc673_to {
+        animation: e2PXD4oTc673_to__to 3000ms linear infinite forwards;
+    }
+    #e2PXD4oTc674_to {
+        animation: e2PXD4oTc674_to__to 3000ms linear infinite forwards;
+    }
+    @keyframes e2PXD4oTc672_to__to {
+        0% {
+        offset-distance: 0%;
+        }
+        33.333333% {
+        offset-distance: 32.053057%;
+        }
+        66.666667% {
+        offset-distance: 74.645997%;
+        }
+        100% {
+        offset-distance: 100%;
+        }
+    }
+    @keyframes e2PXD4oTc673_to__to {
+        0% {
+        offset-distance: 0%;
+        }
+        33.333333% {
+        offset-distance: 42.863749%;
+        }
+        66.666667% {
+        offset-distance: 77.520811%;
+        }
+        100% {
+        offset-distance: 100%;
+        }
+    }
+    @keyframes e2PXD4oTc674_to__to {
+        0% {
+        offset-distance: 0%;
+        }
+        33.333333% {
+        offset-distance: 44.289751%;
+        }
+        66.666667% {
+        offset-distance: 91.766912%;
+        }
+        100% {
+        offset-distance: 100%;
+        }
+    }
+    ]]></style>
+    <defs>
+        <filter id="e2PXD4oTc672-filter" x="-150%" width="400%" y="-150%" height="400%">
+        <feGaussianBlur id="e2PXD4oTc672-filter-blur-0" stdDeviation="40,40" result="result" />
+        </filter>
+        <filter id="e2PXD4oTc673-filter" x="-150%" width="400%" y="-150%" height="400%">
+        <feGaussianBlur id="e2PXD4oTc673-filter-blur-0" stdDeviation="40,40" result="result" />
+        </filter>
+        <filter id="e2PXD4oTc674-filter" x="-150%" width="400%" y="-150%" height="400%">
+        <feGaussianBlur id="e2PXD4oTc674-filter-blur-0" stdDeviation="40,40" result="result" />
+        </filter>
+    </defs>
+    <g
+        id="e2PXD4oTc672_to"
+        style="
+        offset-path: path(
+            'M110.858369,125.922748C127.437213,150,195.087414,146.574532,207.167384,99.399142C211.736185,45.47596,101.845494,13.390558,85.879832,43.133048C66.309013,66.205048,83.896507,87.829126,110.858369,125.922748'
+        );
+        offset-rotate: 0deg;
+        "
+    >
+        <path
+        d="M84.334764,49.44206L34.892704,92.188841l13.905579,57.811158l63.862661-23.819743q11.845494-39.656653,11.845494-40.171675t33.991416,29.356222q-48.927039,56.652359-49.44206,56.652359t-51.502146,7.725322L51.888412,210.12875q60.772533-.515021,61.287554-.515021c.515021,0,27.296137-20.600858,28.32618-22.660944s26.266094-45.836911,26.266094-46.351932q0-.515021,19.055794-52.532188l-30.386266-9.270387q-25.236051-22.145923-25.236051-22.660944t-26.266095-1.545064L96.180258,41.716733L84.334764,49.44206Z"
+        transform="translate(-110.858369,-125.922741)"
+        filter="url(#e2PXD4oTc672-filter)"
+        fill="#e5faff"
+        stroke="#3f5787"
+        stroke-width="0.6"
+        />
+    </g>
+    <g
+        id="e2PXD4oTc673_to"
+        style="
+        offset-path: path(
+            'M150.772533,54.592275C94.120172,33.991416,107.941676,233.399369,150,242.832619C203.051784,254.309365,267.295803,134.420601,243.991427,115.236053C224.935622,80.858369,176.209949,50.893706,150.772533,54.592275'
+        );
+        offset-rotate: 0deg;
+        "
+    >
+        <path
+        d="M48.798283,54.592277l56.137339-31.931333q12.875535,18.540772,13.390557,18.540772t40.171674,8.24035q5.150214,15.450636,9.270386,15.450636c4.120172,0,97.854078,33.991417,97.854078,34.506438q0,.515021,17.510729-49.957075L141.502144,24.206007L110.858366,9.785406L18.412014,15.965663L48.798283,54.592277Z"
+        transform="translate(-150.77253,-54.592273)"
+        filter="url(#e2PXD4oTc673-filter)"
+        fill="#ede1fc"
+        stroke="#3f5787"
+        stroke-width="0.6"
+        />
+    </g>
+    <g
+        id="e2PXD4oTc674_to"
+        style="
+        offset-path: path(
+            'M158.75537,192.360516C185.793991,161.201717,85.879832,26.781117,33.090129,77.124464C-13.995407,161.438221,120.386266,263.175966,137.124473,224.356221L158.75537,192.360516'
+        );
+        offset-rotate: 0deg;
+        "
+    >
+        <path
+        d="M198.154506,102.48927l-39.65665,84.463522-62.317598,52.532187-24.721031-5.150216q-19.570816,26.266094-19.570816,26.781115t83.948498,21.11588l122.575107-1.030043q7.210302-64.892705,7.210302-65.407726c0-.515021-45.321892-15.965665-45.321892-16.995708q0-1.030043,45.32189-58.197423l-67.46781-38.111588Z"
+        transform="translate(-158.755364,-192.360514)"
+        filter="url(#e2PXD4oTc674-filter)"
+        fill="#ddf2fd"
+        stroke="#3f5787"
+        stroke-width="0.6"
+        />
+    </g>
+</svg>

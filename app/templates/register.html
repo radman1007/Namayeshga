@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sapmad</title>
+    <link rel="stylesheet" href="{% static "./css/registration.css" %}" />
+    <link rel="stylesheet" href="{% static "./css/fonts.css" %}" />
+    <link rel="stylesheet" href="{% static "./css/pallet.css" %}" />
+    <link rel="icon" href="./pictures/logo.svg" />
+    <link rel="stylesheet" href="{% static "./node_modules/persian-datepicker/dist/css/persian-datepicker.css" %}" />
+    <script src="{% static "./node_modules/jquery/dist/jquery.js" %}"></script>
+    <script src="{% static "./node_modules/persian-date/dist/persian-date.js" %}"></script>
+    <script src="{% static "./node_modules/persian-datepicker/dist/js/persian-datepicker.js" %}"></script>
+  </head>
+  <body dir="rtl">
+    <div class="container">
+      <a class="exit-container" href="{% url "index" %}">
+        <h2>بازگشت</h2>
+        <img src="{% static "./pictures/left arrow.svg" %}" alt="left arrow" />
+      </a>
+      <form action="{% url "register" %}" method='POST'>
+        {% csrf_token %}
+        <div class="title-container">
+          <img src="{% static "./pictures/logo.svg" %}" alt="logo" />
+          <h1>فرم ثبت نام</h1>
+        </div>
+        <input maxlength="40" placeholder="نام" autofocus type="text" name="name" />
+        <input maxlength="40" placeholder="تاریخ تولد" name="birthday" type="text" class="date-picker" />
+        <input maxlength="40" placeholder="تلفن" type="tel" name="phone" class="tel" />
+        <input maxlength="40" placeholder="ایمیل" type="email" name="email" class="email" />
+        <!-- <input maxlength="40" placeholder="پایه تحصلی" type="text" name="grade" class="grade" /> -->
+        <div class="grade-container">
+          <select name="grade" class="grade-selection">
+            <option value="none">پایه تحصیلی</option>
+            <option value="7th">هفتم</option>
+            <option value="8th">هشتم</option>
+            <option value="9th">نهم</option>
+            <option value="10th">دهم</option>
+            <option value="11th">یازدهم</option>
+          </select>
+          <img src="{% static "./pictures/down.svg" %}" alt="down" class="down2" />
+        </div>
+        <input maxlength="40" placeholder="کد ملی" type="text" name="code" class="national-code" />
+        <div class="schoolname-container">
+          <select name="school" class="schoolname-selection">
+            <option value="none">نام مدرسه</option>
+            <option value="rasht-zone1-1-b">میرزا کوچک خان رشت ناحیه ١ دوره اول</option>
+            <option value="rasht-zone1-2-b">میرزا کوچک خان رشت ناحیه ١ دوره دوم</option>
+            <option value="rasht-zone2-2-b">میرزا کوچک خان رشت ناحیه ٢ دوره دوم</option>
+            <option value="rasht-1-g">فرزانگان رشت دوره اول</option>
+            <option value="rasht-2-g">فرزانگان رشت دوره دوم</option>
+            <option value="talesh-1-2-g">فرزانگان تالش دوره اول و دوم</option>
+            <option value="talesh-1-2-b">میرزا کوچک خان تالش دوره اول و دوم</option>
+            <option value="langarood-1-2-b">شهید بهشتی لنگرود دوره اول و دوم</option>
+            <option value="langarood-1-2-g">فرزانگان لنگرود دوره اول و دوم</option>
+            <option value="lahigan-1-2-g">فرزانگان امام رضا (ع) لاهیجان دوره اول و دوم</option>
+            <option value="lahigan-1-2-b">شهید بهشتی لاهیجان دوره اول و دوم</option>
+          </select>
+          <img src="{% static "./pictures/down.svg" %}" alt="down" class="down1" />
+        </div>
+        <button type="submit">ثبت نام</button>
+      </form>
+      <video src="{% static "./videos/vector gif2.mp4" %}" muted autoplay loop></video>
+    </div>
+    <script src="{% static "./js/registration.js" %}"></script>
+  </body>
+</html>

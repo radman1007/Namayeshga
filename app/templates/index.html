@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sapmad</title>
+    <link rel="stylesheet" href="{% static "./css/main.css" %}" />
+    <link rel="stylesheet" href="{% static "./css/fonts.css" %}" />
+    <link rel="stylesheet" href="{% static "./css/pallet.css" %}" />
+    <link rel="icon" href="{% static "./pictures/logo.svg" %}" />
+  </head>
+  <body dir="rtl">
+    <header>
+      <div class="container">
+        <div class="registration-container">
+          <a href="{% url "register" %}">ثبت نام</a>
+        </div>
+        <div class="logo-container">
+          <h1>سمپاد</h1>
+          <img src="{% static "./pictures/logo.svg" %}" alt="logo" class="logo" />
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">خانه</a></li>
+          <li><a href="#introduction">معرفی</a></li>
+          <li><a href="#more-info">توضیحات</a></li>
+          <li><a href="#about-us">درباره ما</a></li>
+          <li><a href="#contact-us">ارتباط با ما</a></li>
+        </ul>
+      </nav>
+      <div class="menu-container">
+        <img class="menu-icon" src="{% static "./pictures/hamburder menu.svg" %}" alt="menu" />
+        <div class="menu-box">
+          <a href="#">
+            <img src="{% static "./pictures/home.svg" %}" alt="home" />
+            <span>خانه</span>
+          </a>
+          <a href="#introduction">
+            <img src="{% static "./pictures/chat.svg" %}" alt="introduction" />
+            <span>معرفی</span>
+          </a>
+          <a href="#more-info">
+            <img src="{% static "./pictures/text.svg" %}" alt="info" />
+            <span>توضیحات</span>
+          </a>
+          <a href="#about-us">
+            <img src="{% static "./pictures/people.svg" %}" alt="about us" />
+            <span>درباره ما</span>
+          </a>
+          <a href="#contact-us">
+            <img src="{% static "./pictures/letter.svg" %}" alt="contact us" />
+            <span>ارتباط با ما</span>
+          </a>
+          <div class="black-bg"></div>
+          <div class="circle">
+            <img class="close-icon" src="{% static "./pictures/x.svg" %}" alt="close" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="background-container">
+        <img src="{% static "./pictures/title background.svg" %}" alt="background" class="background" />
+        <div class="background-fader"></div>
+      </div>
+      <section id="title">
+        <div class="container">
+          <div class="shapes">
+            <img src="{% static "./pictures/star.svg" %}" alt="star" class="shape star" />
+            <img src="{% static "./pictures/star.svg" %}" alt="star" class="shape star" />
+            <img src="{% static "./pictures/star.svg" %}" alt="star" class="shape star" />
+            <img src="{% static "./pictures/flower.svg" %}" alt="flower" class="shape flower" />
+            <img src="{% static "./pictures/flower.svg" %}" alt="flower" class="shape flower" />
+          </div>
+          <h2>نمایشگاه <span>جلوه</span> های سمپاد</h2>
+          <img class="sampad" src="{% static "./pictures/sampad.svg" %}" alt="sapmad" />
+          <img class="arrow1" src="{% static "./pictures/arrow1.svg" %}" alt="arrow" />
+          <img class="arrow2" src="{% static "./pictures/arrow2.svg" %}" alt="arrow" />
+          <p>رویاتو به نمایش بزار ! ✨</p>
+        </div>
+      </section>
+      <section id="introduction">
+        <div class="text-contaienr">
+          <h2>🍀چه خبره ؟</h2>
+          <p>
+            جشنواره‌ی جلوه‌های سمپاد برای نمایش دستاوردهای علمی پژوهشی دانش آموزان متوسطه اول و دوم دبیرستان‌های استعدادهای درخشان استان گیلان داره به
+            میزبانی دبیرستان دوره دوم میرزا کوچک خان ۱ رشت به صورت استانی تو ۲ الی ۳ روز متوالی برگزار میشه
+          </p>
+          <img class="arrow" src="{% static "./pictures/arrow3.svg" %}" alt="arrow" />
+          <div class="you-can-join-too">
+            <span>تو هم میتونی شرکت کنی !😉</span>
+            <a href="{% url "register" %}">
+              ثبت نام
+              <img class="link" src="{% static "./pictures/link.svg" %}" alt="link" />
+            </a>
+          </div>
+        </div>
+        <video src="{% static "./videos/vector gif1.mp4" %}" loop muted autoplay></video>
+      </section>
+      <section id="more-info">
+        <h2>🍃توضیحات</h2>
+        <div class="chart-contaienr">
+          <div class="line"></div>
+          <div class="box right">
+            <div class="point"></div>
+            <p>سالن‌های دبیرستان میزبان غرفه بندی شده و برای هرکدام از مدارس با توجه به تعداد پروژه ها غرفه تعیین میگردد</p>
+          </div>
+          <div class="box left">
+            <div class="point"></div>
+            <p>
+              دانش آموزان میتوانند اثر خود را به صورت تیمی یا انفرادی در جشنواره به نمایش بگذارند. برای این کار تا ٢٠ بهمن فرصت دارند که حضور خود را
+              ثبت، عنوان پروژه و حوزه‌ی مورد نظر را انتخاب، و چکیده پروژه خود را ارسال و بارگذاری کنند
+            </p>
+          </div>
+          <div class="box right">
+            <div class="point"></div>
+            <p>سپس با بررسی تیم علمی، پروژه‌های برگزیده انتخاب، و از طریق نمایندگان مدارس به آنها اعلام میگردد</p>
+          </div>
+          <div class="box left">
+            <div class="point"></div>
+            <p>برگزیدگان تا اواخر بهمن فرصت دارند تا مستندات پروژه خود را با کمک استاد راهنما آماده و برای دبیرخانه ارسال نمایند</p>
+          </div>
+          <div class="box right">
+            <div class="point"></div>
+            <p>مستندات شامل: پوستر پروژه، فایل PDF و مقاله پروژه هستش</p>
+            <p>قالب پوستر و مقاله به صورت بخشنامه ارسال میشود</p>
+          </div>
+          <div class="box left">
+            <div class="point"></div>
+            <p>
+              در این نمایشگاه دانش آموزان از 11 دبیرستان سمپاد استان گیلان پروژه‌های خود را به نمایش گذاشته و از پروژه‌ی مدارس دیگر بازدید خواهند کرد
+            </p>
+          </div>
+        </div>
+        <canvas id="canvas-1"></canvas>
+        <canvas id="canvas-2"></canvas>
+      </section>
+      <section id="about-us">
+        <h2>❤️درباره ما</h2>
+        <p class="description">
+          سلام سلام !<br />
+          امیدواریم که حالتون خوب باشه !<br />
+          ما گروهی از بچه های سمپادی‌ایم که دور هم جمع شدیم و تصمیم گرفتیم نمایشگاهی رو تحت عنوان جلوه های سمپاد برگزار کنیم
+        </p>
+        <div class="main-container">
+          <div class="line"><div class="line-1"></div></div>
+          <div class="line"><div class="line-2"></div></div>
+        </div>
+      </section>
+      <section id="contact-us">
+        <h2>✉️ارتباط با ما</h2>
+        <div class="container">
+          <div class="shapes">
+            <img src="{% static "./pictures/star.svg" %}" alt="star" class="shape star" />
+            <img src="{% static "./pictures/star.svg" %}" alt="star" class="shape star" />
+            <img src="{% static "./pictures/star.svg" %}" alt="star" class="shape star" />
+            <img src="{% static "./pictures/flower.svg" %}" alt="flower" class="shape flower" />
+            <img src="{% static "./pictures/flower.svg" %}" alt="flower" class="shape flower" />
+          </div>
+          <div class="info">
+            <img class="logo" src="{% static "./pictures/logo.svg" %}" alt="logo" />
+            <p>
+              اگر هرگونه سوال و مشکل در روند ثبت نام داشتید حتما با ما تماس بگیرید.
+            </p>
+            <div class="tel">09123456789<img src="{% static "./pictures/telephone.svg" %}" alt="telephone" /></div>
+            <div class="email">samapad.mirza@gmail.com<img src="{% static "./pictures/envelope.svg" %}" alt="email" /></div>
+          </div>
+          <div class="line"></div>
+          <form action="{% url "index" %}" method='POST'>
+            {% csrf_token %}
+            <input placeholder="نام" type="text" name="name" required />
+            <input placeholder="ایمیل" type="email" name="email" required />
+            <textarea placeholder="پیام" name="message" cols="30" rows="10" required></textarea>
+            <button type="submit">ارسال</button>
+          </form>
+        </div>
+        <div class="animation-container">
+          <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" />
+              <use xlink:href="#gentle-wave" x="48" y="3" />
+              <use xlink:href="#gentle-wave" x="48" y="5" />
+              <use xlink:href="#gentle-wave" x="48" y="7" />
+            </g>
+          </svg>
+        </div>
+      </section>
+    </main>
+    <script src="{% static "./js/main.js" %}"></script>
+  </body>
+</html>
